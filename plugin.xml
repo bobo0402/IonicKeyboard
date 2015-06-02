@@ -21,12 +21,12 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.berheley.main.plugins.IonicKeyBoard"
+    id="com.berheley.main.plugins.IonicKeyboard"
     version="0.3.0">
-    <name>IonicKeyBoard</name>
-    <description>Cordova IonicKeyBoard Plugin</description>
+    <name>IonicKeyboard</name>
+    <description>Cordova IonicKeyboard Plugin</description>
     <license>Apache 2.0</license>
-    <js-module src="www/keyboard.js" name="IonicKeyBoard">
+    <js-module src="www/keyboard.js" name="IonicKeyboard">
         <clobbers target="keyboard" />
     </js-module>
 
@@ -34,19 +34,19 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="IonicKeyBoard" >
-                <param name="android-package" value="com.berheley.main.plugins.IonicKeyBoard"/>
+            <feature name="IonicKeyboard" >
+                <param name="android-package" value="com.berheley.main.plugins.IonicKeyboard"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/IonicKeyBoard.java" target-dir="src/com/berheley/main/plugins" />
+        <source-file src="src/android/IonicKeyboard.java" target-dir="src/com/berheley/main/plugins" />
     </platform>
 
        <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="IonicKeyBoard">
-                <param name="ios-package" value="IonicKeyBoard"/>
+            <feature name="IonicKeyboard">
+                <param name="ios-package" value="IonicKeyboard"/>
             </feature>
         </config-file>
 
